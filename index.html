@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Al Tayr Ensemble - Música Antigua y Mediterránea</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header img {
+            max-width: 150px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+            padding: 10px;
+        }
+
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+            cursor: pointer;
+        }
+
+        nav a:hover {
+            color: #ffcc00;
+        }
+
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://via.placeholder.com/1200x400') no-repeat center center/cover;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+            display: none; /* Ocultar todas las secciones por defecto */
+        }
+
+        .section.active {
+            display: block; /* Mostrar solo la sección activa */
+        }
+
+        .section img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px 0;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        .gallery img {
+            max-width: 200px;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+
+        .video-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .video-container iframe {
+            max-width: 100%;
+            height: 400px;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        footer a {
+            color: #ffcc00;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="https://via.placeholder.com/150" alt="Logo de Al Tayr Ensemble">
+        <h1>Al Tayr Ensemble</h1>
+        <p>Música Antigua, Sefardí y Mediterránea</p>
+    </header>
+
+    <nav>
+        <a href="#about" data-tab="about">Sobre Nosotros</a>
+        <a href="#program" data-tab="program">El Viaje de Abendino</a>
+        <a href="#gallery" data-tab="gallery">Galería</a>
+        <a href="#videos" data-tab="videos">Videos</a>
+        <a href="#contact" data-tab="contact">Contacto</a>
+    </nav>
+
+    <div class="hero">
+        <div>
+            <h1>El Viaje de Abendino</h1>
+            <p>Un viaje musical a través del Mediterráneo</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <section id="about" class="section active">
+            <h2>Sobre Nosotros</h2>
+            <p>Al Tayr Ensemble es una agrupación dedicada a la interpretación de música antigua, sefardí y mediterránea. Nuestro proyecto principal, "El Viaje de Abendino", narra el éxodo de un judío sefardita desde Granada hasta Constantinopla en 1492.</p>
+        </section>
+
+        <section id="program" class="section">
+            <h2>El Viaje de Abendino</h2>
+            <p>Este programa narra el éxodo de un judío sefardita desde su Granada natal hasta Constantinopla, fruto de la expulsión ordenada por los Reyes Católicos en 1492. Durante su periplo, Abendino entra en contacto con diversas realidades culturales, religiosas y musicales del Mediterráneo.</p>
+            <h3>Piezas del Programa</h3>
+            <ul>
+                <li>Morena me llaman - Tradicional sefardí</li>
+                <li>Una sañosa porfía - Juan del Enzina</li>
+                <li>Rodrigo Martínez - Anónimo español</li>
+                <li>Avraham Avinu (El rey Nimrod) - Tradicional sefardí</li>
+                <li>Ya rasha al fattan - Anónimo andalusí</li>
+                <li>Fantasía 11 para vihuela - Luis Milán</li>
+                <li>Non perch’i speri, donna - Lorenzo da Firenze</li>
+                <li>Variaciones sobre la cara cosa - Anónimo italiano</li>
+                <li>Durme durme - Tradicional sefardí</li>
+                <li>La gelosia - Guglielmo Ebreo da Pesaro</li>
+                <li>Todos los bienes del mundo - Juan del Enzina</li>
+                <li>Jovano Jovanke - Tradicional macedonio</li>
+                <li>Kopanitsa - Tradicional búlgaro</li>
+                <li>Los caminos de Sirkedji - Tradicional sefardí</li>
+            </ul>
+        </section>
+
+        <section id="gallery" class="section">
+            <h2>Galería</h2>
+            <div class="gallery">
+                <img src="https://via.placeholder.com/200" alt="Imagen 1">
+                <img src="https://via.placeholder.com/200" alt="Imagen 2">
+                <img src="https://via.placeholder.com/200" alt="Imagen 3">
+            </div>
+        </section>
+
+        <section id="videos" class="section">
+            <h2>Videos</h2>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/?list=UUAlTayrEnsemble" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <h2>Contacto</h2>
+            <p>Email: <a href="mailto:altayrensemble@gmail.com">altayrensemble@gmail.com</a></p>
+            <p>Teléfono: +34 648 552 458 (Alberto Espinosa) / +34 600 303 145 (Olga Rodon)</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Al Tayr Ensemble. Todos los derechos reservados.</p>
+        <p>Síguenos en: 
+            <a href="https://www.youtube.com/@AlTayrEnsemble" target="_blank">YouTube</a> | 
+            <a href="https://www.instagram.com/altayrensemble/" target="_blank">Instagram</a>
+        </p>
+    </footer>
+
+    <script>
+        // JavaScript para manejar las pestañas
+        document.addEventListener('DOMContentLoaded', function () {
+            const tabs = document.querySelectorAll('nav a');
+            const sections = document.querySelectorAll('.section');
+
+            // Mostrar la sección activa al cargar la página
+            showSection('about');
+
+            // Añadir evento de clic a cada pestaña
+            tabs.forEach(tab => {
+                tab.addEventListener('click', function (e) {
+                    e.preventDefault(); // Evitar el comportamiento predeterminado del enlace
+                    const tabId = this.getAttribute('data-tab');
+                    showSection(tabId);
+                });
+            });
+
+            // Función para mostrar la sección correspondiente
+            function showSection(tabId) {
+                sections.forEach(section => {
+                    if (section.id === tabId) {
+                        section.classList.add('active');
+                    } else {
+                        section.classList.remove('active');
+                    }
+                });
+            }
+        });
+    </script>
+
+</body>
+</html>
